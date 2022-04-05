@@ -1,5 +1,3 @@
-```<meta name="google-site-verification" content="lU2ESfe-dpZyu7E-Br7CH0l0LO4X2I8hSJD2uTPEYek" />```
-
 <a href="https://github.com/y9c">
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=y9c&show_icons=true&theme=ayu-mirage" />
 </a>
