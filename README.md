@@ -3,5 +3,5 @@
 </a>
 </br>
 <a href="https://github.com/y9c">
-   <img align="center" src="https://github-readme-stats-7vlsc5n0x-kitswas.vercel.app/api/top-langs/?username=y9c&langs_count=10&exclude_repo=biotools,y9c.github.io,myneovim,mousedb,&layout=compact&card_width=444&theme=ayu-mirage" />
+   <img align="center" src="https://github-readme-stats-7vlsc5n0x-kitswas.vercel.app/api/top-langs/?username=y9c&langs_count=10&exclude_repo=biotools,y9c.github.io,myneovim&layout=compact&card_width=444&theme=ayu-mirage" />
 </a>
