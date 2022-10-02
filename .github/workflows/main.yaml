@@ -24,6 +24,8 @@ jobs:
           config_animated: yes
           config_timezone: America/Chicago
           config_order: languages, lines
+          repositories_affiliations: owner # organization_member
+          repositories_forks: no
 
           plugin_languages: yes
           plugin_languages_ignored: html, css
@@ -33,8 +35,10 @@ jobs:
           plugin_languages_other: yes
 
           plugin_lines: yes
-          plugin_lines_sections: repositories, history
+          plugin_lines_sections: repositories
           plugin_lines_skipped: y9c/myneovim, y9c/y9c.github.io, y9c/biotools, y9c/datatools, y9c/scmd-calmorph
           plugin_lines_repositories_limit: 4
           plugin_lines_history_limit: 1
-          repositories_affiliations: owner # organization_member
+
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
