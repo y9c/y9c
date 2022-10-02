@@ -26,11 +26,11 @@ jobs:
           config_order: languages, lines
 
           plugin_languages: yes
-          plugin_languages_ignored: html, css, javascript
-          plugin_languages_skipped: y9c/myneovim, y9c/y9c.github.io, y9c/biotools, y9c/datatools, y9c/scmd-calmorph
+          plugin_languages_ignored: html, css
+          plugin_languages_skipped: y9c/myneovim, y9c/y9c.github.io, y9c/biotools, y9c/datatools, y9c/scmd-calmorph, y9c/RSSHub
           plugin_languages_colors: github
           plugin_languages_details: percentage
-          plugin_languages_other: no
+          plugin_languages_other: yes
 
           plugin_lines: yes
           plugin_lines_sections: repositories, history
