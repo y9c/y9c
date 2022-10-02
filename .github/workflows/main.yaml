@@ -20,19 +20,21 @@ jobs:
           user: y9c
           template: classic
           base: ''
+          filename: github-metrics.svg
           config_animated: yes
           config_timezone: America/Chicago
           config_order: languages, lines
+
           plugin_languages: yes
           plugin_languages_ignored: html, css, javascript
           plugin_languages_skipped: y9c/myneovim, y9c/y9c.github.io, y9c/biotools, y9c/datatools, y9c/scmd-calmorph
           plugin_languages_colors: github
           plugin_languages_details: percentage
-          plugin_languages_other: yes
+          plugin_languages_other: no
+
           plugin_lines: yes
           plugin_lines_sections: repositories, history
           plugin_lines_skipped: y9c/myneovim, y9c/y9c.github.io, y9c/biotools, y9c/datatools, y9c/scmd-calmorph
-          plugin_lines_repositories_limit: 3
+          plugin_lines_repositories_limit: 4
           plugin_lines_history_limit: 1
           repositories_affiliations: owner # organization_member
-          filename: github-metrics.svg
