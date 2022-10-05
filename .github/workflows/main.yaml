@@ -21,7 +21,6 @@ jobs:
           template: classic
           base: ''
           filename: github-metrics.svg
-          config_animated: yes
           config_timezone: America/Chicago
           config_order: languages, lines
           repositories_affiliations: owner # organization_member
