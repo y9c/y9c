@@ -19,7 +19,7 @@ jobs:
           # Options
           user: y9c
           template: classic
-          base: ''
+          base: header, repositories
           filename: resource/github-metrics.svg
           config_timezone: America/Chicago
           config_order: languages, lines
@@ -32,12 +32,3 @@ jobs:
           plugin_languages_colors: github
           plugin_languages_details: percentage
           plugin_languages_other: yes
-
-          plugin_lines: yes
-          plugin_lines_sections: repositories
-          plugin_lines_skipped: y9c/myneovim, y9c/biotools, y9c/datatools
-          plugin_lines_repositories_limit: 4
-          plugin_lines_history_limit: 1
-
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
