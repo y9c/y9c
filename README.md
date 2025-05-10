@@ -10,3 +10,4 @@
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=y9c&repo=m5C-UBSseq&theme=dracula)](https://github.com/y9c/m5C-UBSseq) [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=y9c&repo=m6A-CAMseq&theme=dracula)](https://github.com/y9c/m6A-CAMseq)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=y9c&repo=pseudoU-BIDseq&theme=dracula)](https://github.com/y9c/pseudoU-BIDseq) [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=y9c&repo=m6A-SACseq&theme=dracula)](https://github.com/y9c/m6A-SACseq)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=y9c&repo=pseudoU-PUMseq&theme=dracula)](https://github.com/y9c/pseudoU-PUMseq) [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=y9c&repo=m6A-eTAMseq&theme=dracula)](https://github.com/y9c/m6A-eTAMseq)
