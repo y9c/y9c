@@ -66,8 +66,6 @@ single-base-resolution RNA modification detection (`m⁵C` · `m⁶A` · `Ψ`) a
 
 <p><a href="https://github.com/y9c/cpup"><b>cpup</b></a> <a href="https://github.com/y9c/cpup"><img src="https://img.shields.io/github/stars/y9c/cpup?style=flat-square&color=yellow" alt="stars" /></a><br /><small>Convert samtools mpileup output to base-count tables (multi-BAM)</small></p>
 
-<p><a href="https://github.com/y9c/MultiQC_readsStats"><b>MultiQC_readsStats</b></a><br /><small>Custom MultiQC modules &amp; templates for read statistics</small></p>
-
 <p><small><b>Utilities &amp; experiments</b></small></p>
 
 <p><a href="https://github.com/y9c/llmtop"><b>llmtop</b></a> <a href="https://github.com/y9c/llmtop"><img src="https://img.shields.io/badge/new-2026-2ea44f?style=flat-square" alt="new" /></a><br /><small>Real-time terminal dashboard for LLM inference servers (GPU, throughput, speculative decoding)</small></p>
