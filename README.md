@@ -78,12 +78,3 @@ single-base-resolution RNA modification detection (`m⁵C` · `m⁶A` · `Ψ`) a
 </tr>
 </table>
 
----
-
-<div align="center">
-
-<img src="resource/footer_line.svg" width="360" alt="" />
-
-[GitHub](https://github.com/y9c) · [Blog](https://yech.xyz)
-
-</div>
