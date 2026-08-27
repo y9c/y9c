@@ -30,6 +30,9 @@ COL_STARS = "yellow"      # star counter badge
 COL_NEW = "2ea44f"        # created this year
 COL_SINCE = "17a2b8"      # created in an earlier year
 CURRENT_YEAR = datetime.now(timezone.utc).year
+# Only tag a repo with a "since-<year>" badge once it is at least this old.
+# Newer repos (e.g. created last year or the year before) get no age badge.
+SINCE_MIN_AGE = 3
 
 # Order of groups within the right-hand column.
 GROUP_ORDER = ["rna", "tools", "utils"]
@@ -53,18 +56,25 @@ def fetch_repo(repo):
 
 
 def age_badge(repo, created_year):
-    """Build the age badge for a repo based on its creation year."""
+    """Build the age badge for a repo based on its creation year.
+
+    * created this year          -> `new-<year>`  (green)
+    * created >= SINCE_MIN_AGE yrs ago -> `since-<year>`  (teal)
+    * anything in between        -> no age badge
+    """
     url = f"https://github.com/{USER}/{repo}"
     if created_year >= CURRENT_YEAR:
         return (
             f'<a href="{url}"><img src="https://img.shields.io/badge/'
             f'new-{created_year}-{COL_NEW}?style=flat-square" alt="new" /></a>'
         )
-    return (
-        f'<a href="{url}"><img src="https://img.shields.io/badge/'
-        f'since-{created_year}-{COL_SINCE}?style=flat-square" '
-        f'alt="since {created_year}" /></a>'
-    )
+    if CURRENT_YEAR - created_year >= SINCE_MIN_AGE:
+        return (
+            f'<a href="{url}"><img src="https://img.shields.io/badge/'
+            f'since-{created_year}-{COL_SINCE}?style=flat-square" '
+            f'alt="since {created_year}" /></a>'
+        )
+    return ""
 
 
 def star_badge(repo):
@@ -80,10 +90,12 @@ def render_item(item, created_year):
     badges = []
     if item.get("show_stars", True):
         badges.append(star_badge(repo))
-    badges.append(age_badge(repo, created_year))
-    badge_html = " ".join(badges)
+    age = age_badge(repo, created_year)
+    if age:
+        badges.append(age)
+    badge_html = (" " + " ".join(badges)) if badges else ""
     return (
-        f'<p><a href="https://github.com/{USER}/{repo}"><b>{item["name"]}</b></a> '
+        f'<p><a href="https://github.com/{USER}/{repo}"><b>{item["name"]}</b></a>'
         f'{badge_html}<br /><small>{item["desc"]}</small></p>\n'
     )
 
