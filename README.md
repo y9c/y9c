@@ -6,7 +6,7 @@
 single-base-resolution RNA modification detection (`m⁵C` · `m⁶A` · `Ψ`) and NGS tooling.
 
 [![GitHub followers](https://img.shields.io/github/followers/y9c?style=social)](https://github.com/y9c?tab=followers)
-[![Blog](https://img.shields.io/badge/blog-yech.xyz-8e44ad?style=flat-square)](https://yech.xyz)
+<a href="https://github.com/y9c?tab=repositories"><img src="https://img.shields.io/badge/stars-179-yellow?style=flat-square" alt="179 stars" /></a>
 
 <br />
 
