@@ -66,13 +66,13 @@ single-base-resolution RNA modification detection (`m⁵C` · `m⁶A` · `Ψ`) a
 
 <p><a href="https://github.com/y9c/cpup"><b>cpup</b></a> <a href="https://github.com/y9c/cpup"><img src="https://img.shields.io/github/stars/y9c/cpup?style=flat-square&color=yellow" alt="stars" /></a><br /><small>Convert samtools mpileup output to base-count tables (multi-BAM)</small></p>
 
-<p><a href="https://github.com/y9c/bwamem"><b>bwamem</b></a> <a href="https://github.com/y9c/bwamem"><img src="https://img.shields.io/github/stars/y9c/bwamem?style=flat-square&color=yellow" alt="stars" /></a> <a href="https://github.com/y9c/bwamem"><img src="https://img.shields.io/badge/new-2026-2ea44f?style=flat-square" alt="new" /></a><br /><small>Python bindings for the BWA-MEM aligner</small></p>
+<p><a href="https://github.com/y9c/bwamem"><b>bwamem</b></a> <a href="https://github.com/y9c/bwamem"><img src="https://img.shields.io/github/stars/y9c/bwamem?style=flat-square&color=yellow" alt="stars" /></a><br /><small>Python bindings for the BWA-MEM aligner</small></p>
 
 <p><small><b>Utilities &amp; experiments</b></small></p>
 
 <p><a href="https://github.com/y9c/llmtop"><b>llmtop</b></a> <a href="https://github.com/y9c/llmtop"><img src="https://img.shields.io/badge/new-2026-2ea44f?style=flat-square" alt="new" /></a><br /><small>Real-time terminal dashboard for LLM inference servers (GPU, throughput, speculative decoding)</small></p>
 
-<p><a href="https://github.com/y9c/hey"><b>hey</b></a> <a href="https://github.com/y9c/hey"><img src="https://img.shields.io/github/stars/y9c/hey?style=flat-square&color=yellow" alt="stars" /></a> <a href="https://github.com/y9c/hey"><img src="https://img.shields.io/badge/new-2026-2ea44f?style=flat-square" alt="new" /></a><br /><small>Some useful / useless commands</small></p>
+<p><a href="https://github.com/y9c/hey"><b>hey</b></a> <a href="https://github.com/y9c/hey"><img src="https://img.shields.io/github/stars/y9c/hey?style=flat-square&color=yellow" alt="stars" /></a><br /><small>Some useful / useless commands</small></p>
 
 <p><a href="https://github.com/y9c/graph-easy-py"><b>graph-easy-py</b></a><br /><small>Python port of <a href="https://github.com/ironcamel/Graph-Easy">Graph::Easy</a> — render graphs as ASCII art</small></p>
 
