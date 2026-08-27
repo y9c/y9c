@@ -1,0 +1,121 @@
+[
+  {
+    "name": "m5C-UBSseq",
+    "repo": "m5C-UBSseq",
+    "desc": "Ultrafast bisulfite sequencing for m⁵C detection",
+    "group": "rna",
+    "show_stars": true
+  },
+  {
+    "name": "pseudoU-BIDseq",
+    "repo": "pseudoU-BIDseq",
+    "desc": "Detecting Ψ (pseudouridine) modification at single-base resolution",
+    "group": "rna",
+    "show_stars": true
+  },
+  {
+    "name": "m6A-SACseq",
+    "repo": "m6A-SACseq",
+    "desc": "Optimized protocol &amp; pipeline for m⁶A-SAC-seq",
+    "group": "rna",
+    "show_stars": true
+  },
+  {
+    "name": "m6A-CAMseq",
+    "repo": "m6A-CAMseq",
+    "desc": "Pipeline for m⁶A-CAM-seq",
+    "group": "rna",
+    "show_stars": true
+  },
+  {
+    "name": "trichromat",
+    "repo": "trichromat",
+    "desc": "General pipeline for 3-letter conversion sequencing methods",
+    "group": "rna",
+    "show_stars": true
+  },
+  {
+    "name": "dichromat",
+    "repo": "dichromat",
+    "desc": "Containerized conversion sequencing (eTAM-seq, CAM-seq, GLORI, BS-seq): mapping → site-calling → reporting",
+    "group": "rna",
+    "show_stars": true
+  },
+  {
+    "name": "m6A-eTAMseq",
+    "repo": "m6A-eTAMseq",
+    "desc": "Enzymatic method for assaying m⁶A at single-base resolution",
+    "group": "rna",
+    "show_stars": true
+  },
+  {
+    "name": "SLOTH",
+    "repo": "SLOTH",
+    "desc": "Single-cell lineage tracing on Targeted Hypermutation",
+    "group": "rna",
+    "show_stars": true
+  },
+  {
+    "name": "pseudoU-PUMseq",
+    "repo": "pseudoU-PUMseq",
+    "desc": "Ψ-PUMseq pipeline for pseudouridine detection",
+    "group": "rna",
+    "show_stars": true
+  },
+  {
+    "name": "sanger",
+    "repo": "sanger",
+    "desc": "Sanger sequencing toolkit — chromatogram visualization, mutation calling, QC, base-calling, trimming, assembly &amp; export (CLI + Python + MCP)",
+    "group": "tools",
+    "show_stars": true
+  },
+  {
+    "name": "cutseq",
+    "repo": "cutseq",
+    "desc": "Trim sequencing adapters from NGS data automatically",
+    "group": "tools",
+    "show_stars": true
+  },
+  {
+    "name": "metagene",
+    "repo": "metagene",
+    "desc": "Metagene profiling analysis &amp; visualization",
+    "group": "tools",
+    "show_stars": true
+  },
+  {
+    "name": "cpup",
+    "repo": "cpup",
+    "desc": "Convert samtools mpileup output to base-count tables (multi-BAM)",
+    "group": "tools",
+    "show_stars": true
+  },
+  {
+    "name": "bwamem",
+    "repo": "bwamem",
+    "desc": "Python bindings for the BWA-MEM aligner",
+    "group": "tools",
+    "show_stars": true
+  },
+  {
+    "name": "llmtop",
+    "repo": "llmtop",
+    "desc": "Real-time terminal dashboard for LLM inference servers (GPU, throughput, speculative decoding)",
+    "group": "utils",
+    "show_stars": false
+  },
+  {
+    "name": "hey",
+    "repo": "hey",
+    "desc": "Some useful / useless commands",
+    "group": "utils",
+    "show_stars": true
+  },
+  {
+    "name": "graph-easy-py",
+    "repo": "graph-easy-py",
+    "desc": "Python port of <a href=\"https://github.com/ironcamel/Graph-Easy\">Graph::Easy</a> — render graphs as ASCII art",
+    "group": "utils",
+    "show_stars": false
+  }
+]

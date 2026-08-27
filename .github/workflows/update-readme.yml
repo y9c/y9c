@@ -1,0 +1,54 @@
+name: Update profile README
+
+on:
+  schedule:
+    # 06:00 UTC on the 1st of every month
+    - cron: '0 6 1 * *'
+  push:
+    branches: [ master ]
+    # Rebuild whenever the featured repo list or the generator itself changes.
+    paths:
+      - '.github/repos.json'
+      - '.github/update_readme.py'
+      - '.github/workflows/update-readme.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-readme
+  cancel-in-progress: false
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Regenerate README from repos.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python .github/update_readme.py
+
+      - name: Commit and push changes
+        run: |
+          if git diff --exit-code -- README.md; then
+            echo "-> No changes to README.md"
+          else
+            git config user.name "y9c-readme-bot"
+            git config user.email "actions@github.com"
+            git add README.md
+            git commit -m "chore: auto-update profile README ($(date -u +%F))"
+            git push origin master
+            echo "-> README.md updated and pushed"
+          fi
