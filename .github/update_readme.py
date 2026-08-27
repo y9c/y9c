@@ -60,19 +60,6 @@ def fetch_repo(repo):
     return data["stargazers_count"], int(data["created_at"][:4])
 
 
-def fetch_total_stars():
-    """Sum stars across all non-fork repos owned by the user."""
-    total = 0
-    page = 1
-    while True:
-        items = _gh_get(f"/users/{USER}/repos?per_page=100&page={page}")
-        if not items:
-            break
-        total += sum(r["stargazers_count"] for r in items if not r["fork"])
-        page += 1
-    return total
-
-
 def age_badge(repo, created_year):
     """Build the age badge for a repo based on its creation year.
 
@@ -123,8 +110,6 @@ def build_readme(items):
     for item in items:
         by_group[item["group"]].append(item)
 
-    total_stars = fetch_total_stars()
-
     collections = []
 
     collections.append(
@@ -133,7 +118,7 @@ def build_readme(items):
         "**Bioinformatics × RNA epigenetics** — open-source pipelines for\n"
         "single-base-resolution RNA modification detection (`m⁵C` · `m⁶A` · `Ψ`) and NGS tooling.\n\n"
         "[![GitHub followers](https://img.shields.io/github/followers/y9c?style=social)](https://github.com/y9c?tab=followers)\n"
-        f'<a href="https://github.com/y9c?tab=repositories"><img src="https://img.shields.io/badge/stars-{total_stars}-yellow?style=flat-square" alt="{total_stars} stars" /></a>\n'
+        "[![GitHub stars](https://img.shields.io/github/stars/y9c?style=social)](https://github.com/y9c?tab=repositories)\n"
         "\n"
         "<br />\n\n"
         '<i>🏛️ Organizations</i>\n\n'
