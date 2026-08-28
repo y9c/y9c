@@ -98,6 +98,13 @@
     "show_stars": true
   },
   {
+    "name": "webblast",
+    "repo": "webblast",
+    "desc": "NCBI BLAST client CLI — submit, poll &amp; cache web BLAST searches with colored output",
+    "group": "tools",
+    "show_stars": false
+  },
+  {
     "name": "llmtop",
     "repo": "llmtop",
     "desc": "Real-time terminal dashboard for LLM inference servers (GPU, throughput, speculative decoding)",
