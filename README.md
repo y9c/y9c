@@ -68,7 +68,7 @@ single-base-resolution RNA modification detection (`m⁵C` · `m⁶A` · `Ψ`) a
 
 <p><a href="https://github.com/y9c/bwamem"><b>bwamem</b></a> <a href="https://github.com/y9c/bwamem"><img src="https://img.shields.io/github/stars/y9c/bwamem?style=flat-square&color=yellow" alt="stars" /></a><br /><small>Python bindings for the BWA-MEM aligner</small></p>
 
-<p><a href="https://github.com/y9c/webblast"><b>webblast</b></a> <a href="https://github.com/y9c/webblast"><img src="https://img.shields.io/badge/since-2024-17a2b8?style=flat-square" alt="since 2024" /></a><br /><small>NCBI BLAST client CLI — submit, poll &amp; cache web BLAST searches with colored output</small></p>
+<p><a href="https://github.com/y9c/webblast"><b>webblast</b></a><br /><small>NCBI BLAST client CLI — submit, poll &amp; cache web BLAST searches with colored output</small></p>
 
 <p><small><b>Utilities &amp; experiments</b></small></p>
 

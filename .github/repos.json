@@ -102,8 +102,7 @@
     "repo": "webblast",
     "desc": "NCBI BLAST client CLI — submit, poll &amp; cache web BLAST searches with colored output",
     "group": "tools",
-    "show_stars": false,
-    "since": 2024
+    "show_stars": false
   },
   {
     "name": "llmtop",

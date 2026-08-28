@@ -60,22 +60,14 @@ def fetch_repo(repo):
     return data["stargazers_count"], int(data["created_at"][:4])
 
 
-def age_badge(repo, created_year, since=None):
+def age_badge(repo, created_year):
     """Build the age badge for a repo based on its creation year.
 
-    * if `since` is given (per-repo override in repos.json) -> `since-<year>`
-      regardless of age, so a young repo can still advertise its lineage.
     * created this year          -> `new-<year>`  (green)
     * created >= SINCE_MIN_AGE yrs ago -> `since-<year>`  (teal)
     * anything in between        -> no age badge
     """
     url = f"https://github.com/{USER}/{repo}"
-    if since is not None:
-        return (
-            f'<a href="{url}"><img src="https://img.shields.io/badge/'
-            f'since-{since}-{COL_SINCE}?style=flat-square" '
-            f'alt="since {since}" /></a>'
-        )
     if created_year >= CURRENT_YEAR:
         return (
             f'<a href="{url}"><img src="https://img.shields.io/badge/'
@@ -103,7 +95,7 @@ def render_item(item, created_year):
     badges = []
     if item.get("show_stars", True):
         badges.append(star_badge(repo))
-    age = age_badge(repo, created_year, since=item.get("since"))
+    age = age_badge(repo, created_year)
     if age:
         badges.append(age)
     badge_html = (" " + " ".join(badges)) if badges else ""
