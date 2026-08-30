@@ -58,7 +58,7 @@
   {
     "name": "smallRNA-prism",
     "repo": "smallRNA-prism",
-    "desc": "Small RNA sequencing analysis pipeline (soon)",
+    "desc": "Small RNA sequencing analysis pipeline",
     "group": "pipeline",
     "show_stars": true,
     "private": true
@@ -91,7 +91,7 @@
     "desc": "Metagene / variant analysis tools — Ribo-seq, variant calling, comparison, genomics utilities (successor to <code>metagene</code> &amp; <code>variant</code>)",
     "group": "tools",
     "show_stars": true,
-    "active": true
+    "private": true
   },
   {
     "name": "sanger",

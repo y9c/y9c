@@ -56,13 +56,18 @@ def _gh_get(path):
 
 
 def fetch_repo(repo):
-    """Return (stars, created_year) for a repo; (0, None) if it is not publicly
-    accessible via the API (e.g. private / renamed) so badges can be skipped."""
+    """Return (stars, created_year) for a repo.
+
+    A genuine 404 means the repo is not publicly accessible (private / renamed)
+    and we return (0, None) so badges can be skipped.  A 403/429 (rate limit) is
+    NOT a private repo — we re-raise so the run fails loudly instead of silently
+    marking many public repos as 'private'.
+    """
     try:
         data = _gh_get(f"/repos/{USER}/{repo}")
         return data["stargazers_count"], int(data["created_at"][:4])
     except urllib.error.HTTPError as exc:
-        if exc.code in (404, 403):
+        if exc.code == 404:
             return 0, None
         raise
 
@@ -116,16 +121,20 @@ def superseded_badge(superseded_by):
 
 def private_badge():
     url = f"https://github.com/{USER}"
+    # Short marker: a lock + "WIP" for private repos that are not public yet.
     return (
         f'<a href="{url}"><img src="https://img.shields.io/badge/'
-        f'private%20%c2%b7%20to%20be%20released-9f9f9f?style=flat-square" '
-        f'alt="private, to be released" /></a>'
+        f'%f0%9f%94%92%20WIP-9f9f9f?style=flat-square" '
+        f'alt="🔒 WIP (not public yet)" /></a>'
     )
 
 
 def render_item(item, created_year):
     repo = item["repo"]
-    private = created_year is None or item.get("private")
+    # Only repos that are explicitly flagged private (e.g. coralsnake,
+    # smallRNA-prism) are tagged 'to be released'. A repo whose metadata cannot
+    # be fetched (rate-limit/network) is never inferred to be private.
+    private = item.get("private") is True
     superseded_by = item.get("superseded_by")
     badges = []
     note_parts = []
@@ -144,7 +153,7 @@ def render_item(item, created_year):
         badges.append(active_badge())
     if private:
         badges.append(private_badge())
-        note_parts.append("private — to be released")
+        note_parts.append("🔒 WIP")
     badge_html = (" " + " ".join(badges)) if badges else ""
     note = (" — " + " · ".join(note_parts)) if note_parts else ""
     return (
