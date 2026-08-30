@@ -8,23 +8,6 @@ single-base-resolution RNA modification detection (`m⁵C` · `m⁶A` · `Ψ`) a
 [![GitHub followers](https://img.shields.io/github/followers/y9c?style=social)](https://github.com/y9c?tab=followers)
 [![GitHub stars](https://img.shields.io/github/stars/y9c?style=social)](https://github.com/y9c?tab=repositories)
 
-<br />
-
-<i>🏛️ Organizations</i>
-
-<table align="center">
-<tr>
-<td align="center" width="50%">
-<a href="https://github.com/yclab"><img src="https://github.com/yclab.png?size=64" width="64" height="64" alt="yclab" /></a><br />
-<a href="https://github.com/yclab"><b>yclab</b></a> <a href="https://github.com/yclab?tab=followers"><img src="https://img.shields.io/github/followers/yclab?style=flat-square" alt="yclab followers" /></a>
-</td>
-<td align="center" width="50%">
-<a href="https://github.com/srils"><img src="https://github.com/srils.png?size=64" width="64" height="64" alt="srils" /></a><br />
-<a href="https://github.com/srils"><b>srils</b></a> <a href="https://github.com/srils?tab=followers"><img src="https://img.shields.io/github/followers/srils?style=flat-square" alt="srils followers" /></a>
-</td>
-</tr>
-</table>
-
 </div>
 
 <table>
@@ -107,3 +90,26 @@ single-base-resolution RNA modification detection (`m⁵C` · `m⁶A` · `Ψ`) a
 <p><a href="https://github.com/y9c/pbr"><b>pbr</b></a> <a href="https://github.com/y9c/pbr"><img src="https://img.shields.io/github/stars/y9c/pbr?style=flat-square&color=yellow" alt="stars" /></a> <a href="https://github.com/y9c/pbr"><img src="https://img.shields.io/badge/since-2023-17a2b8?style=flat-square" alt="since 2023" /></a> <a href="https://github.com/y9c/countmut"><img src="https://img.shields.io/badge/superseded%20by%20countmut-red?style=flat-square" alt="superseded by countmut" /></a><br /><small>Pileup with Lua read/site filter expressions — ⚠️ use <a href="https://github.com/y9c/countmut">countmut</a> instead</small></p>
 
 </details>
+
+---
+
+<br />
+
+<div align="center">
+
+<i>🏛️ Organizations</i>
+
+<table align="center">
+<tr>
+<td align="center" width="50%">
+<a href="https://github.com/yclab"><img src="https://github.com/yclab.png?size=64" width="64" height="64" alt="yclab" /></a><br />
+<a href="https://github.com/yclab"><b>yclab</b></a> <a href="https://github.com/yclab?tab=followers"><img src="https://img.shields.io/github/followers/yclab?style=flat-square" alt="yclab followers" /></a>
+</td>
+<td align="center" width="50%">
+<a href="https://github.com/srils"><img src="https://github.com/srils.png?size=64" width="64" height="64" alt="srils" /></a><br />
+<a href="https://github.com/srils"><b>srils</b></a> <a href="https://github.com/srils?tab=followers"><img src="https://img.shields.io/github/followers/srils?style=flat-square" alt="srils followers" /></a>
+</td>
+</tr>
+</table>
+
+</div>
