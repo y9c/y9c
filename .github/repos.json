@@ -52,16 +52,23 @@
     "name": "SLOTH",
     "repo": "SLOTH",
     "desc": "Single-cell lineage tracing on Targeted Hypermutation",
-    "group": "rna",
+    "group": "pipeline",
     "show_stars": true
   },
   {
     "name": "smallRNA-prism",
     "repo": "smallRNA-prism",
     "desc": "Small RNA sequencing analysis pipeline (soon)",
-    "group": "rna",
+    "group": "pipeline",
     "show_stars": true,
     "private": true
+  },
+  {
+    "name": "scmd-calmorph",
+    "repo": "scmd-calmorph",
+    "desc": "Quantify morphological traits of budding yeast",
+    "group": "pipeline",
+    "show_stars": true
   },
   {
     "name": "pseudoU-PUMseq",
@@ -85,13 +92,6 @@
     "group": "tools",
     "show_stars": true,
     "active": true
-  },
-  {
-    "name": "scmd-calmorph",
-    "repo": "scmd-calmorph",
-    "desc": "Quantify morphological traits of budding yeast",
-    "group": "tools",
-    "show_stars": true
   },
   {
     "name": "sanger",

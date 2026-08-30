@@ -34,8 +34,9 @@ CURRENT_YEAR = datetime.now(timezone.utc).year
 # Newer repos (e.g. created last year or the year before) get no age badge.
 SINCE_MIN_AGE = 3
 
-# Order of groups within the right-hand column.
-GROUP_ORDER = ["rna", "tools", "utils"]
+# Order of groups: left column = pipelines (RNA modification + other bioinformatics),
+# right column = tools + utilities.
+GROUP_ORDER = ["rna", "pipeline", "tools", "utils"]
 
 
 def _gh_headers():
@@ -207,9 +208,17 @@ def build_readme(items):
         return "\n".join(lines)
 
     rna = render_group("rna")
+    pipeline = render_group("pipeline")
     tools = render_group("tools")
     utils = render_group("utils")
     hidden = render_superseded()
+
+    pipeline_section = (
+        "\n\n<h2 align=\"center\">🔬 Other bioinformatics analysis pipelines</h2>\n"
+        '<p align="center"><small>General pipelines for bioinformatics analysis '
+        "(not RNA-modification detection).</small></p>\n\n"
+        f"{pipeline}"
+    ) if pipeline else ""
 
     collections.append(
         "<table>\n"
@@ -218,6 +227,7 @@ def build_readme(items):
         '<h2 align="center">🧬 RNA modification pipelines</h2>\n'
         '<p align="center"><small>Single-base-resolution detection of RNA epitranscriptomic modifications — from method to pipeline.</small></p>\n\n'
         f"{rna}"
+        f"{pipeline_section}"
         "\n</td>\n"
         '<td width="50%" valign="top">\n\n'
         '<h2 align="center">🛠️ Analysis &amp; NGS tools</h2>\n'
