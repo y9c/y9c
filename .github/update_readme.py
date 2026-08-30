@@ -90,6 +90,23 @@ def star_badge(repo):
     )
 
 
+def active_badge():
+    url = f"https://github.com/{USER}"
+    return (
+        f'<a href="{url}"><img src="https://img.shields.io/badge/active-'
+        f'2ea44f?style=flat-square" alt="active" /></a>'
+    )
+
+
+def superseded_badge(superseded_by):
+    url = f"https://github.com/{USER}/{superseded_by}"
+    return (
+        f'<a href="{url}"><img src="https://img.shields.io/badge/'
+        f'superseded%20by%20{superseded_by}-red?style=flat-square" '
+        f'alt="superseded by {superseded_by}" /></a>'
+    )
+
+
 def render_item(item, created_year):
     repo = item["repo"]
     badges = []
@@ -98,10 +115,20 @@ def render_item(item, created_year):
     age = age_badge(repo, created_year)
     if age:
         badges.append(age)
+    superseded_by = item.get("superseded_by")
+    note = ""
+    if superseded_by:
+        badges.append(superseded_badge(superseded_by))
+        note = (
+            f' — ⚠️ use <a href="https://github.com/{USER}/{superseded_by}">'
+            f'{superseded_by}</a> instead'
+        )
+    elif item.get("active"):
+        badges.append(active_badge())
     badge_html = (" " + " ".join(badges)) if badges else ""
     return (
         f'<p><a href="https://github.com/{USER}/{repo}"><b>{item["name"]}</b></a>'
-        f'{badge_html}<br /><small>{item["desc"]}</small></p>\n'
+        f'{badge_html}<br /><small>{item["desc"]}{note}</small></p>\n'
     )
 
 
