@@ -71,6 +71,14 @@
     "active": true
   },
   {
+    "name": "coralsnake",
+    "repo": "coralsnake",
+    "desc": "Metagene / variant analysis tools — Ribo-seq, variant calling, comparison, genomics utilities (successor to <code>metagene</code> &amp; <code>variant</code>)",
+    "group": "tools",
+    "show_stars": true,
+    "active": true
+  },
+  {
     "name": "sanger",
     "repo": "sanger",
     "desc": "Sanger sequencing toolkit — chromatogram visualization, mutation calling, QC, base-calling, trimming, assembly &amp; export (CLI + Python + MCP)",
@@ -89,7 +97,16 @@
     "repo": "metagene",
     "desc": "Metagene profiling analysis &amp; visualization",
     "group": "tools",
-    "show_stars": true
+    "show_stars": true,
+    "superseded_by": "coralsnake"
+  },
+  {
+    "name": "variant",
+    "repo": "variant",
+    "desc": "Python utilities for genomic variant analysis",
+    "group": "tools",
+    "show_stars": true,
+    "superseded_by": "coralsnake"
   },
   {
     "name": "cpup",

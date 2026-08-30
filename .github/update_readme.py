@@ -55,9 +55,15 @@ def _gh_get(path):
 
 
 def fetch_repo(repo):
-    """Return (stars, created_year) for a single repo via the GitHub API."""
-    data = _gh_get(f"/repos/{USER}/{repo}")
-    return data["stargazers_count"], int(data["created_at"][:4])
+    """Return (stars, created_year) for a repo; (0, None) if it is not publicly
+    accessible via the API (e.g. private / renamed) so badges can be skipped."""
+    try:
+        data = _gh_get(f"/repos/{USER}/{repo}")
+        return data["stargazers_count"], int(data["created_at"][:4])
+    except urllib.error.HTTPError as exc:
+        if exc.code in (404, 403):
+            return 0, None
+        raise
 
 
 def age_badge(repo, created_year):
@@ -110,9 +116,9 @@ def superseded_badge(superseded_by):
 def render_item(item, created_year):
     repo = item["repo"]
     badges = []
-    if item.get("show_stars", True):
+    if created_year is not None and item.get("show_stars", True):
         badges.append(star_badge(repo))
-    age = age_badge(repo, created_year)
+    age = age_badge(repo, created_year) if created_year is not None else ""
     if age:
         badges.append(age)
     superseded_by = item.get("superseded_by")
@@ -134,8 +140,12 @@ def render_item(item, created_year):
 
 def build_readme(items):
     by_group = {group: [] for group in GROUP_ORDER}
+    superseded = []
     for item in items:
-        by_group[item["group"]].append(item)
+        if item.get("superseded_by"):
+            superseded.append(item)
+        else:
+            by_group[item["group"]].append(item)
 
     collections = []
 
@@ -171,9 +181,21 @@ def build_readme(items):
             lines.append(render_item(item, created_year))
         return "\n".join(lines)
 
+    def render_superseded():
+        if not superseded:
+            return ""
+        lines = ["<details>", "<summary><b>🗄️ Superseded / archived tools</b> — "
+                 "replaced by newer tools (see each badge)</summary>\n"]
+        for item in superseded:
+            _, created_year = fetch_repo(item["repo"])
+            lines.append(render_item(item, created_year))
+        lines.append("</details>")
+        return "\n".join(lines)
+
     rna = render_group("rna")
     tools = render_group("tools")
     utils = render_group("utils")
+    hidden = render_superseded()
 
     collections.append(
         "<table>\n"
@@ -193,6 +215,8 @@ def build_readme(items):
         "</tr>\n"
         "</table>\n"
     )
+    if hidden:
+        collections.append("\n" + hidden)
 
     return "\n".join(collections)
 
