@@ -108,6 +108,13 @@
     "show_stars": true
   },
   {
+    "name": "igvplot",
+    "repo": "igvplot",
+    "desc": "IGV-style BAM read pileup / coverage / gene-feature / sashimi plots in matplotlib (pysam + dna_features_viewer), with per-base mismatch &amp; epigenetic-modification detail",
+    "group": "tools",
+    "show_stars": true
+  },
+  {
     "name": "metagene",
     "repo": "metagene",
     "desc": "Metagene profiling analysis &amp; visualization",
