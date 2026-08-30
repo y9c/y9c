@@ -60,11 +60,14 @@ Active, well-documented tooling for sequencing data — CLI, libraries and visua
 <p><a href="https://github.com/y9c/cutseq"><b>cutseq</b></a> <a href="https://github.com/y9c/cutseq"><img src="https://img.shields.io/github/stars/y9c/cutseq?style=flat-square&color=yellow" alt="stars" /></a><br /><small>Trim sequencing adapters from NGS data automatically</small></p>
 <p><a href="https://github.com/y9c/metagene"><b>metagene</b></a> <a href="https://github.com/y9c/metagene"><img src="https://img.shields.io/github/stars/y9c/metagene?style=flat-square&color=yellow" alt="stars" /></a><br /><small>Metagene profiling analysis &amp; visualization</small></p>
 <p><a href="https://github.com/y9c/cpup"><b>cpup</b></a> <a href="https://github.com/y9c/cpup"><img src="https://img.shields.io/github/stars/y9c/cpup?style=flat-square&color=yellow" alt="stars" /></a><br /><small>Convert samtools mpileup output to base-count tables (multi-BAM)</small></p>
+<p><a href="https://github.com/y9c/variant"><b>variant</b></a> <a href="https://github.com/y9c/variant"><img src="https://img.shields.io/github/stars/y9c/variant?style=flat-square&color=yellow" alt="stars" /></a><br /><small>Python utilities for genomic variant analysis</small></p>
 </td>
 <td width="50%" valign="top">
 <p><a href="https://github.com/y9c/igvplot"><b>igvplot</b></a> <a href="https://github.com/y9c/igvplot"><img src="https://img.shields.io/github/stars/y9c/igvplot?style=flat-square&color=yellow" alt="stars" /></a> <a href="https://github.com/y9c/igvplot"><img src="https://img.shields.io/badge/new-2026-2ea44f?style=flat-square" alt="new" /></a><br /><small>IGV-style BAM pileup, coverage, gene features &amp; base modifications in matplotlib</small></p>
 <p><a href="https://github.com/y9c/webblast"><b>webblast</b></a> <a href="https://github.com/y9c/webblast"><img src="https://img.shields.io/badge/new-2026-2ea44f?style=flat-square" alt="new" /></a> <a href="https://pypi.org/project/webblast/"><img src="https://img.shields.io/pypi/v/webblast.svg?style=flat-square" alt="PyPI" /></a><br /><small>Fast NCBI BLAST searches from the command line</small></p>
 <p><a href="https://github.com/y9c/bwamem"><b>bwamem</b></a> <a href="https://github.com/y9c/bwamem"><img src="https://img.shields.io/badge/new-2026-2ea44f?style=flat-square" alt="new" /></a> <a href="https://pypi.org/project/bwamem/"><img src="https://img.shields.io/pypi/v/bwamem.svg?style=flat-square" alt="PyPI" /></a><br /><small>Python bindings for the BWA-MEM aligner</small></p>
+<p><a href="https://github.com/y9c/lc96parser"><b>lc96parser</b></a> <a href="https://github.com/y9c/lc96parser"><img src="https://img.shields.io/github/stars/y9c/lc96parser?style=flat-square&color=yellow" alt="stars" /></a><br /><small>Convert Roche LC96 PCR files to RDML and show Cq values</small></p>
+<p><a href="https://github.com/y9c/scmd-calmorph"><b>scmd-calmorph</b></a> <a href="https://github.com/y9c/scmd-calmorph"><img src="https://img.shields.io/github/stars/y9c/scmd-calmorph?style=flat-square&color=yellow" alt="stars" /></a><br /><small>Quantify morphological traits of budding yeast</small></p>
 </td>
 </tr>
 </table>
@@ -78,12 +81,9 @@ Active, well-documented tooling for sequencing data — CLI, libraries and visua
 <p><a href="https://github.com/y9c/llmtop"><b>llmtop</b></a> <a href="https://github.com/y9c/llmtop"><img src="https://img.shields.io/badge/new-2026-2ea44f?style=flat-square" alt="new" /></a><br /><small>Real-time terminal dashboard for LLM inference servers (GPU, throughput, speculative decoding)</small></p>
 <p><a href="https://github.com/y9c/graph-easy-py"><b>graph-easy-py</b></a> <a href="https://github.com/y9c/graph-easy-py"><img src="https://img.shields.io/badge/new-2026-2ea44f?style=flat-square" alt="new" /></a><br /><small>Python port of Graph::Easy — render graphs as ASCII art</small></p>
 <p><a href="https://github.com/y9c/md2html"><b>md2html</b></a><br /><small>Generate styled HTML reports from Markdown files</small></p>
-<p><a href="https://github.com/y9c/lc96parser"><b>lc96parser</b></a><br /><small>Convert Roche LC96 files to RDML and show Cq values</small></p>
 </td>
 <td width="50%" valign="top">
 <p><a href="https://github.com/y9c/myneovim.lua"><b>myneovim.lua</b></a><br /><small>Lua-based Neovim configuration</small></p>
-<p><a href="https://github.com/y9c/variant"><b>variant</b></a><br /><small>Python utilities for genomic variant analysis</small></p>
-<p><a href="https://github.com/y9c/scmd-calmorph"><b>scmd-calmorph</b></a><br /><small>Quantify morphological traits of budding yeast</small></p>
 <p><a href="https://github.com/y9c/hey"><b>hey</b></a><br /><small>A collection of some useful / useless shell commands</small></p>
 </td>
 </tr>
