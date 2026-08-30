@@ -113,25 +113,39 @@ def superseded_badge(superseded_by):
     )
 
 
+def private_badge():
+    url = f"https://github.com/{USER}"
+    return (
+        f'<a href="{url}"><img src="https://img.shields.io/badge/'
+        f'private%20%c2%b7%20to%20be%20released-9f9f9f?style=flat-square" '
+        f'alt="private, to be released" /></a>'
+    )
+
+
 def render_item(item, created_year):
     repo = item["repo"]
-    badges = []
-    if created_year is not None and item.get("show_stars", True):
-        badges.append(star_badge(repo))
-    age = age_badge(repo, created_year) if created_year is not None else ""
-    if age:
-        badges.append(age)
+    private = created_year is None or item.get("private")
     superseded_by = item.get("superseded_by")
-    note = ""
+    badges = []
+    note_parts = []
+    if not private and item.get("show_stars", True):
+        badges.append(star_badge(repo))
+    if not private:
+        age = age_badge(repo, created_year)
+        if age:
+            badges.append(age)
     if superseded_by:
         badges.append(superseded_badge(superseded_by))
-        note = (
-            f' — ⚠️ use <a href="https://github.com/{USER}/{superseded_by}">'
-            f'{superseded_by}</a> instead'
-        )
-    elif item.get("active"):
+        note_parts.append(
+            f'⚠️ use <a href="https://github.com/{USER}/{superseded_by}">'
+            f'{superseded_by}</a> instead')
+    elif item.get("active") and not private:
         badges.append(active_badge())
+    if private:
+        badges.append(private_badge())
+        note_parts.append("private — to be released")
     badge_html = (" " + " ".join(badges)) if badges else ""
+    note = (" — " + " · ".join(note_parts)) if note_parts else ""
     return (
         f'<p><a href="https://github.com/{USER}/{repo}"><b>{item["name"]}</b></a>'
         f'{badge_html}<br /><small>{item["desc"]}{note}</small></p>\n'

@@ -56,6 +56,14 @@
     "show_stars": true
   },
   {
+    "name": "smallRNA-prism",
+    "repo": "smallRNA-prism",
+    "desc": "Small RNA sequencing analysis pipeline (soon)",
+    "group": "rna",
+    "show_stars": true,
+    "private": true
+  },
+  {
     "name": "pseudoU-PUMseq",
     "repo": "pseudoU-PUMseq",
     "desc": "Ψ-PUMseq pipeline for pseudouridine detection",
@@ -77,6 +85,13 @@
     "group": "tools",
     "show_stars": true,
     "active": true
+  },
+  {
+    "name": "scmd-calmorph",
+    "repo": "scmd-calmorph",
+    "desc": "Quantify morphological traits of budding yeast",
+    "group": "tools",
+    "show_stars": true
   },
   {
     "name": "sanger",
