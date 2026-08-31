@@ -57,7 +57,7 @@ single-base-resolution RNA modification detection (`m⁵C` · `m⁶A` · `Ψ`) a
 
 <p><a href="https://github.com/y9c/igvplot"><b>igvplot</b></a> <a href="https://github.com/y9c/igvplot"><img src="https://img.shields.io/github/stars/y9c/igvplot?style=flat-square&color=yellow" alt="stars" /></a> <a href="https://github.com/y9c/igvplot"><img src="https://img.shields.io/badge/new-2026-2ea44f?style=flat-square" alt="new" /></a><br /><small>IGV-style BAM read pileup / coverage / gene-feature / sashimi plots in matplotlib (pysam + dna_features_viewer), with per-base mismatch &amp; epigenetic-modification detail</small></p>
 
-<p><a href="https://github.com/y9c/prismalign"><b>prismalign</b></a> <a href="https://github.com/y9c/prismalign"><img src="https://img.shields.io/github/stars/y9c/prismalign?style=flat-square&color=yellow" alt="stars" /></a><br /><small>N-color nucleotide-conversion alignment engine with pluggable backends (bwa-mem, minimap2, pure-Python) — HISAT-3N style</small></p>
+<p><a href="https://github.com/y9c/prismalign"><b>prismalign</b></a> <a href="https://github.com/y9c/prismalign"><img src="https://img.shields.io/github/stars/y9c/prismalign?style=flat-square&color=yellow" alt="stars" /></a> <a href="https://github.com/y9c/prismalign"><img src="https://img.shields.io/badge/new-2026-2ea44f?style=flat-square" alt="new" /></a><br /><small>N-color nucleotide-conversion alignment engine with pluggable backends (bwa-mem, minimap2, pure-Python) — HISAT-3N style</small></p>
 
 <p><a href="https://github.com/y9c/webblast"><b>webblast</b></a><br /><small>NCBI BLAST client CLI — submit, poll &amp; cache web BLAST searches with colored output</small></p>
 
