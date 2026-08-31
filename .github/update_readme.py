@@ -79,6 +79,8 @@ def age_badge(repo, created_year):
     * created >= SINCE_MIN_AGE yrs ago -> `since-<year>`  (teal)
     * anything in between        -> no age badge
     """
+    if created_year is None:
+        return ""
     url = f"https://github.com/{USER}/{repo}"
     if created_year >= CURRENT_YEAR:
         return (

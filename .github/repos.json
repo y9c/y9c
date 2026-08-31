@@ -148,9 +148,9 @@
     "superseded_by": "countmut"
   },
   {
-    "name": "bwamem",
-    "repo": "bwamem",
-    "desc": "Python bindings for the BWA-MEM aligner",
+    "name": "prismalign",
+    "repo": "prismalign",
+    "desc": "N-color nucleotide-conversion alignment engine with pluggable backends (bwa-mem, minimap2, pure-Python) — HISAT-3N style",
     "group": "tools",
     "show_stars": true
   },
