@@ -28,13 +28,6 @@
     "show_stars": true
   },
   {
-    "name": "dichromat",
-    "repo": "dichromat",
-    "desc": "Containerized conversion sequencing (eTAM-seq, CAM-seq, GLORI, BS-seq): mapping → site-calling → reporting",
-    "group": "rna",
-    "show_stars": true
-  },
-  {
     "name": "m6A-eTAMseq",
     "repo": "m6A-eTAMseq",
     "desc": "Enzymatic method for assaying m⁶A at single-base resolution",
@@ -67,6 +60,13 @@
     "name": "pseudoU-PUMseq",
     "repo": "pseudoU-PUMseq",
     "desc": "Ψ-PUMseq pipeline for pseudouridine detection",
+    "group": "rna",
+    "show_stars": true
+  },
+  {
+    "name": "dichromat",
+    "repo": "dichromat",
+    "desc": "Containerized conversion sequencing (eTAM-seq, CAM-seq, GLORI, BS-seq): mapping → site-calling → reporting",
     "group": "rna",
     "show_stars": true
   },

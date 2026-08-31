@@ -25,11 +25,11 @@ single-base-resolution RNA modification detection (`m⁵C` · `m⁶A` · `Ψ`) a
 
 <p><a href="https://github.com/y9c/m6A-CAMseq"><b>m6A-CAMseq</b></a> <a href="https://github.com/y9c/m6A-CAMseq"><img src="https://img.shields.io/github/stars/y9c/m6A-CAMseq?style=flat-square&color=yellow" alt="stars" /></a><br /><small>Pipeline for m⁶A-CAM-seq</small></p>
 
-<p><a href="https://github.com/y9c/dichromat"><b>dichromat</b></a> <a href="https://github.com/y9c/dichromat"><img src="https://img.shields.io/github/stars/y9c/dichromat?style=flat-square&color=yellow" alt="stars" /></a> <a href="https://github.com/y9c/dichromat"><img src="https://img.shields.io/badge/new-2026-2ea44f?style=flat-square" alt="new" /></a><br /><small>Containerized conversion sequencing (eTAM-seq, CAM-seq, GLORI, BS-seq): mapping → site-calling → reporting</small></p>
-
 <p><a href="https://github.com/y9c/m6A-eTAMseq"><b>m6A-eTAMseq</b></a> <a href="https://github.com/y9c/m6A-eTAMseq"><img src="https://img.shields.io/github/stars/y9c/m6A-eTAMseq?style=flat-square&color=yellow" alt="stars" /></a><br /><small>Enzymatic method for assaying m⁶A at single-base resolution</small></p>
 
 <p><a href="https://github.com/y9c/pseudoU-PUMseq"><b>pseudoU-PUMseq</b></a> <a href="https://github.com/y9c/pseudoU-PUMseq"><img src="https://img.shields.io/github/stars/y9c/pseudoU-PUMseq?style=flat-square&color=yellow" alt="stars" /></a><br /><small>Ψ-PUMseq pipeline for pseudouridine detection</small></p>
+
+<p><a href="https://github.com/y9c/dichromat"><b>dichromat</b></a> <a href="https://github.com/y9c/dichromat"><img src="https://img.shields.io/github/stars/y9c/dichromat?style=flat-square&color=yellow" alt="stars" /></a> <a href="https://github.com/y9c/dichromat"><img src="https://img.shields.io/badge/new-2026-2ea44f?style=flat-square" alt="new" /></a><br /><small>Containerized conversion sequencing (eTAM-seq, CAM-seq, GLORI, BS-seq): mapping → site-calling → reporting</small></p>
 
 
 <h2 align="center">🔬 Other bioinformatics analysis pipelines</h2>
