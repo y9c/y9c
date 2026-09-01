@@ -81,10 +81,9 @@
   {
     "name": "coralsnake",
     "repo": "coralsnake",
-    "desc": "Metagene / variant analysis tools — Ribo-seq, variant calling, comparison, genomics utilities (successor to <code>metagene</code> &amp; <code>variant</code>)",
+    "desc": "Exon-aware RNA analysis pipeline — splice-aware BAM liftover, site/variant annotation, metagene &amp; motif analysis (successor to <code>metagene</code> &amp; <code>variant</code>)",
     "group": "tools",
-    "show_stars": true,
-    "private": true
+    "show_stars": true
   },
   {
     "name": "sanger",
