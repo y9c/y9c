@@ -59,6 +59,8 @@ single-base-resolution RNA modification detection (`m⁵C` · `m⁶A` · `Ψ`) a
 
 <p><a href="https://github.com/y9c/webblast"><b>webblast</b></a><br /><small>NCBI BLAST client CLI — submit, poll &amp; cache web BLAST searches with colored output</small></p>
 
+<p><a href="https://github.com/y9c/treeio"><b>treeio</b></a> <a href="https://github.com/y9c/treeio"><img src="https://img.shields.io/github/stars/y9c/treeio?style=flat-square&color=yellow" alt="stars" /></a> <a href="https://github.com/y9c/treeio"><img src="https://img.shields.io/badge/since-2018-17a2b8?style=flat-square" alt="since 2018" /></a><br /><small>Pure-Python parser for tree data formats (Newick, Nexus, &amp; friends)</small></p>
+
 <p><small><b>Utilities &amp; experiments</b></small></p>
 
 <p><a href="https://github.com/y9c/llmtop"><b>llmtop</b></a> <a href="https://github.com/y9c/llmtop"><img src="https://img.shields.io/badge/new-2026-2ea44f?style=flat-square" alt="new" /></a><br /><small>Real-time terminal dashboard for LLM inference servers (GPU, throughput, speculative decoding)</small></p>
